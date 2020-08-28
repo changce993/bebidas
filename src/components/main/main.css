@@ -1,0 +1,103 @@
+
+.left, .rigt{
+    width: 100%;
+}
+form .form{
+    flex-direction: column;
+}
+form .form input, form .form select, form .form button {
+    width: 100%;
+    border: none;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: .1rem;
+}
+button{
+    background:var(--gradient-purple);
+    color: white;
+    cursor: pointer;
+}
+
+
+.recetas_container{
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.receta_body_containerr{
+    background-color: #fff;
+    flex-direction: column;
+    padding: .5rem;
+    border-radius: .5rem;
+    margin: 0 0 1rem;
+    transition: .3s;
+}
+
+.receta_body_containerr:hover{
+    box-shadow: 0 3px 10px #ddd;
+    transform: scale(1.05);
+
+}
+
+.main_container{
+    flex-direction: column;
+}
+
+.receta_body_containerr p{
+    text-align: center;
+    margin: 1rem 0 0 0;
+}
+
+
+.receta_body_containerr img{
+    width: 100%;
+    margin: 0 auto;
+    border-radius: .2rem;
+}
+
+.receta_body_containerr button{
+    width: 100%;
+    background: var(--gradient-purple);
+    padding: 1rem;
+    margin-top: .5rem;
+    border-radius: .3rem;
+    color: white;
+    text-align: center;
+    transition:.3s;
+    border: none;
+}
+
+.modal_img{
+    width: 100%;
+    border-radius: .1rem;
+}
+h2, h3, .modal_container p{
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.paper{
+    background-color: red;
+}
+
+@media(min-width: 769px){
+    .left, .right{
+        padding: 1rem;
+    }
+    .left{
+        width: 30%;
+    }
+    .right{
+        width: 70%;
+    }
+    .recetas_container{
+        flex-direction: row;
+    }
+    .main_container{
+        flex-direction: row;
+    }
+    .receta_body_containerr{
+        width: 30%;
+        margin: 0 3% 1rem 0;
+    }
+}

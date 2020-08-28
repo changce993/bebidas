@@ -1,0 +1,10 @@
+header{
+    background: var(--gradient-purple);
+    padding: 7rem 1rem;
+}
+@media(min-width: 769px){
+    header{
+        background: var(--gradient-purple);
+        padding: 7rem;
+    }
+}
